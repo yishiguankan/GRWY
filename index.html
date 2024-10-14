@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点击搜索</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            background-color: black;
+            padding: 10px;
+            color: red;
+            font-size: 16px;
+        }
+
+        .search-button {
+            margin: 50px auto;
+            padding: 20px 50px;
+            font-size: 36px;
+            background-color: white;
+            color: black;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .ads-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .ad {
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            margin: 10px;
+            border: 1px solid white;
+        }
+
+        .ad img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-ad {
+            margin-top: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .text-ad-bottom {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部提示 -->
+    <div class="header">
+        搜索链接可能会被限制<br>可复制此页面链接到浏览器搜索
+    </div>
+
+    <!-- 搜索按钮 -->
+    <button class="search-button" onclick="redirectToSearch()">点击搜索</button>
+
+    <!-- 广告位 -->
+    <div class="ads-container">
+        <a class="ad" href="https://your-ad-link-1.com" target="_blank">
+            <img src="https://your-image-link-1.jpg" alt="广告1">
+        </a>
+        <a class="ad" href="https://your-ad-link-2.com" target="_blank">
+            <img src="https://your-image-link-2.jpg" alt="广告2">
+        </a>
+        <a class="ad" href="https://your-ad-link-3.com" target="_blank">
+            <img src="https://your-ad-link-3.jpg" alt="广告3">
+        </a>
+        <a class="ad" href="https://your-ad-link-4.com" target="_blank">
+            <img src="https://your-image-link-4.jpg" alt="广告4">
+        </a>
+        <a class="ad" href="https://your-ad-link-5.com" target="_blank">
+            <img src="https://your-image-link-5.jpg" alt="广告5">
+        </a>
+        <a class="ad" href="https://your-ad-link-6.com" target="_blank">
+            <img src="https://your-image-link-6.jpg" alt="广告6">
+        </a>
+        <!-- 继续添加更多广告 -->
+    </div>
+
+    <!-- 底部文字广告 -->
+    <div class="text-ad" onclick="window.open('https://your-text-ad-link-1.com', '_blank')">
+        文字广告1
+    </div>
+    <div class="text-ad text-ad-bottom" onclick="window.open('https://your-text-ad-link-2.com', '_blank')">
+        文字广告2
+    </div>
+
+    <script>
+        function redirectToSearch() {
+            window.location.href = "http://www.kkkob.com/apps/index.html?id=211229kl"; // 替换为实际的跳转链接
+        }
+    </script>
+</body>
+</html>
